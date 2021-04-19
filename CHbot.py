@@ -30,7 +30,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDownBot
 
-I can download video or audio from Youtube. Made by [𝙎𝙖𝙣𝙙𝙮](https://t.me/AmKuSaL) 🇱🇰
+I can download video or audio from Youtube. Made by @AmKuSaL 🇱🇰
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -170,7 +170,7 @@ if Config.AUDIO_THUMBNAIL == "No":
        # info (s2tw)
        webpage_url = info_dict['webpage_url']
        title = s2tw(info_dict['title'])
-       caption = f"<b>🎭[CyberHackers](https://t.me/Cyber0Hacker)🎭<a href=\"{webpage_url}\">{title}</a></b>"
+       caption = f"<b>@Cyber0Hacker<a href=\"{webpage_url}\">{title}</a></b>"
        duration = int(float(info_dict['duration']))
        performer = s2tw(info_dict['uploader'])
        await message.reply_audio(audio_file, caption=caption, duration=duration,
@@ -193,7 +193,7 @@ else:
        # info (s2tw)
        webpage_url = info_dict['webpage_url']
        title = s2tw(info_dict['title'])
-       caption = f"<b>[CyberHackers](https://t.me/Cyber0Hacker)<a href=\"{webpage_url}\">{title}</a></b>"
+       caption = f"<b>@Cyber0Hacker<a href=\"{webpage_url}\">{title}</a></b>"
        duration = int(float(info_dict['duration']))
        performer = s2tw(info_dict['uploader'])
        await message.reply_audio(audio_file, caption=caption, duration=duration,
@@ -243,7 +243,7 @@ if Config.VIDEO_THUMBNAIL == "No":
       # info (s2tw)
       webpage_url = info_dict['webpage_url']
       title = s2tw(info_dict['title'])
-      caption = f"<b>[CyberHackers](https://t.me/Cyber0Hacker)<a href=\"{webpage_url}\">{title}</a></b>"
+      caption = f"<b>@Cyber0Hacker<a href=\"{webpage_url}\">{title}</a></b>"
       duration = int(float(info_dict['duration']))
       width, height = get_resolution(info_dict)
       await message.reply_video(
@@ -263,7 +263,7 @@ else:
       # info (s2tw)
       webpage_url = info_dict['webpage_url']
       title = s2tw(info_dict['title'])
-      caption = f"<b>[CyberHackers](https://t.me/Cyber0Hacker)<a href=\"{webpage_url}\">{title}</a></b>"
+      caption = f"<b>@Cyber0Hacker<a href=\"{webpage_url}\">{title}</a></b>"
       duration = int(float(info_dict['duration']))
       width, height = get_resolution(info_dict)
       await message.reply_video(
