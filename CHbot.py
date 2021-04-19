@@ -323,4 +323,4 @@ Join @Cyber0Hacker
 """
 )
 
-Jebot.run()
+CHbot.run()
