@@ -16,5 +16,5 @@
 
 ### Developers:
 
-- [𝙎𝙖𝙣𝙙𝙮](https://t.me/AmKuSaL
+- [𝙎𝙖𝙣𝙙𝙮](https://t.me/AmKuSaL)
 - [@ImJanindu](https://t.me/ImJanindu)
