@@ -30,7 +30,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDownBot
 
-I can download video or audio from Youtube. Made by [𝙎𝙖𝙣𝙙𝙮 🇱🇰](https://t.me/AmKuSaL)
+I can download video or audio from Youtube. Made by @AmKuSaL 🇱🇰
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -138,7 +138,7 @@ async def callback_query_ytdl_audio(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("**Downloading audio## Bot by [🎭CyberHackers🎭](https://t.me/cyber0hacker)...**")
+            await callback_query.edit_message_text("**Downloading audio## Bot by @Cyber0Hacker...**")
             ydl.process_info(info_dict)
             # upload
             audio_file = ydl.prepare_filename(info_dict)
