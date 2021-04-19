@@ -8,7 +8,7 @@ from opencc import OpenCC
 from config import Config
 import wget
 
-Jebot = Client(
+CHbot = Client(
    "YT Downloader",
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
@@ -26,7 +26,7 @@ s2tw = OpenCC('s2tw.json').convert
 @CHbot.on_message(filters.command("start"))
 async def start(client, message):
    if message.chat.type == 'private':
-       await Jebot.send_message(
+       await CHbot.send_message(
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDownBot
 
@@ -50,7 +50,7 @@ Hit help button to find out more about how to use me</b>""",
 @CHbot.on_message(filters.command("help"))
 async def help(client, message):
     if message.chat.type == 'private':   
-        await Jebot.send_message(
+        await CHbot.send_message(
                chat_id=message.chat.id,
                text="""<b>AnyDownBot Help!
 
@@ -74,7 +74,7 @@ Just send a Youtube url to download it in video or audio format!
 @CHbot.on_message(filters.command("about"))
 async def about(client, message):
     if message.chat.type == 'private':   
-        await Jebot.send_message(
+        await CHbot.send_message(
                chat_id=message.chat.id,
                text="""<b>About AnyDownBot!</b>
 
