@@ -138,7 +138,7 @@ async def callback_query_ytdl_audio(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("**Downloading audio 🎶 Bot by @Cyber0Hacker...**")
+            await callback_query.edit_message_text("**Downloading audio 🎵 《 Bot by @Cyber0Hacker 》...**")
             ydl.process_info(info_dict)
             # upload
             audio_file = ydl.prepare_filename(info_dict)
@@ -217,7 +217,7 @@ async def callback_query_ytdl_video(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("**Downloading video 🎬 Bot by @Cyber0Hacker...**")
+            await callback_query.edit_message_text("**Downloading video 🎬《 Bot by @Cyber0Hacker 》...**")
             ydl.process_info(info_dict)
             # upload
             video_file = ydl.prepare_filename(info_dict)
