@@ -65,7 +65,7 @@ Just send a Youtube url to download it in video or audio format!
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Source Code", url="https://github.com/kusalCY/Anydownbot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -78,9 +78,9 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About AnyDownBot!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/AmKuSaL">𝙎𝙖𝙣𝙙𝙮 🇱🇰</a>
+<b>♞ Developer:</b> <a href="https://t.me/AmKuSaL">🇱🇰˜”*°•.𝙆𝙪𝙨𝙖𝙡.•°*”˜🇱🇰</a>
 
-<b>♞ Support:</b> <a href="https://t.me/cyber0hacker">🎭CyberHackers🎭</a>
+<b>♞ Support:</b> <a href="https://t.me/cyber0hacker">🎭𝙀𝙝𝙞𝙕𝙤𝙣𝙚𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡🎭</a>
 
 <b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
