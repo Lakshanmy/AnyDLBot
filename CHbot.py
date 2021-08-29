@@ -30,18 +30,21 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDownBot
 
-I can download video or audio from Youtube. Made by @AmKuSaL 🇱🇰
+I can download video or audio from Youtube. Made by @Lakshan_S 😇
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "Developer", callback_data="help")
+                                ],[
                                         InlineKeyboardButton(
-                                            "Group 💬", url="https://t.me/cyber0hacker")
+                                            "Group 💬", url="https://t.me/SSH_Store"),
+                                      InlineKeyboardButton(
+                                            "Channel 📢", url="https://t.me/UnlimitedWorldTeam")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code 💾", url="https://github.com/kusalCY/AnyDownBot")
+                                            "Help", callback_data="help")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -65,7 +68,7 @@ Just send a Youtube url to download it in video or audio format!
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/kusalCY/Anydownbot")
+                                            "Developer", url="https://t.me/Lakshan_S")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -78,19 +81,19 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About AnyDownBot!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/AmKuSaL">🇱🇰˜”*°•.𝙆𝙪𝙨𝙖𝙡.•°*”˜🇱🇰</a>
+<b>♞ Developer:</b> <a href="https://t.me/Lakshan_S">Lakshan 😇</a>
 
-<b>♞ Support:</b> <a href="https://t.me/cyber0hacker">🎭𝙀𝙝𝙞𝙕𝙤𝙣𝙚𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡🎭</a>
+<b>♞ Support:</b> <a href="https://t.me/SSH_Store">🍀 SSH Store 🍀</a>
 
 <b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>~ @Cyber0Hacker</b>""",
+<b>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/kusalCY/AnyDownBot")
+                                            "Developer", url="https://t.me/Lakshan_S")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -99,7 +102,7 @@ async def about(client, message):
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
-@CHbot.on_message(filters.private
+@CHbot.on_message(filters.public
                    & filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
@@ -170,7 +173,7 @@ if Config.AUDIO_THUMBNAIL == "No":
        # info (s2tw)
        webpage_url = info_dict['webpage_url']
        title = s2tw(info_dict['title'])
-       caption = f"<b>@Cyber0Hacker</b> <b><a href=\"{webpage_url}\">{title}</a></b>"
+       caption = f"<b>@SSH_Store</b> <b><a href=\"{webpage_url}\">{title}</a></b>"
        duration = int(float(info_dict['duration']))
        performer = s2tw(info_dict['uploader'])
        await message.reply_audio(audio_file, caption=caption, duration=duration,
@@ -243,7 +246,7 @@ if Config.VIDEO_THUMBNAIL == "No":
       # info (s2tw)
       webpage_url = info_dict['webpage_url']
       title = s2tw(info_dict['title'])
-      caption = f"<b>@Cyber0Hacker</b> <b><a href=\"{webpage_url}\">{title}</a></b>"
+      caption = f"<b>@SSH_Store</b> <b><a href=\"{webpage_url}\">{title}</a></b>"
       duration = int(float(info_dict['duration']))
       width, height = get_resolution(info_dict)
       await message.reply_video(
@@ -263,7 +266,7 @@ else:
       # info (s2tw)
       webpage_url = info_dict['webpage_url']
       title = s2tw(info_dict['title'])
-      caption = f"<b>@Cyber0Hacker</b> <b><a href=\"{webpage_url}\">{title}</a></b>"
+      caption = f"<b>@SSH_Store</b> <b><a href=\"{webpage_url}\">{title}</a></b>"
       duration = int(float(info_dict['duration']))
       width, height = get_resolution(info_dict)
       await message.reply_video(
@@ -319,7 +322,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @Cyber0Hacker
+Join @SSH_Store & @UnlimitedWorldTeam
 """
 )
 
